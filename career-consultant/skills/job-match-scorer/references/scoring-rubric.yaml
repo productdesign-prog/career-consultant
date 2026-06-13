@@ -1,28 +1,40 @@
-# Job match scoring rubric — SKILLS/CAPABILITY ONLY. Total 100.
+# Job match scoring rubric — SKILLS FROM THE RESUME ONLY. Total 100.
 #
-# Design intent: the match score measures whether the candidate CAN do the job
-# (skills, role fit, evidence), NOT whether the conditions suit them. Conditions
-# (location, compensation, work format, language-as-logistics, industry) are
-# reported as informational flags and NEVER change the score or the decision.
-# This deliberately widens the funnel — the user decides which conditions matter.
+# Design intent: the score answers ONE question — do the candidate's skills/
+# competencies (as evidenced in their resume) cover the skills the vacancy asks
+# for? Nothing else is scored. Everything below is EXCLUDED from the score and
+# reported as a non-blocking flag instead:
+#   - seniority / grade level (e.g. role is Middle but candidate is Lead)
+#   - domain / industry (e.g. consumer vs B2B, fintech vs medtech)
+#   - location, work format, timezone, relocation
+#   - compensation / salary
+#   - language as a logistics requirement
+#   - industry exclusions
+# This keeps the funnel as wide as possible: the user decides which flags matter.
 
 weights:
-  must_have_skills: 35  # the role's required skills/competencies
-  role_fit: 25          # title, seniority, task type, scope, IC vs lead
-  evidence_strength: 25 # metrics, shipped outcomes, scale, decisions, research, portfolio
-  domain_fit: 10        # relevant domain/problem-space experience (capability, not a condition)
-  keyword_coverage: 5   # overlap with the vacancy's skill language, without stuffing
+  required_skills_coverage: 55  # how many of the vacancy's required + preferred SKILLS are present in the resume
+  evidence_strength: 30         # does the resume actually demonstrate those skills (outcomes, scale, shipped work)
+  keyword_coverage: 15          # resume language overlaps the vacancy's SKILL terms, without stuffing
 
-# Decisions are based on the skills score alone (funnel-wide thresholds).
+# Decisions are based on the skills score alone. Funnel-wide thresholds.
 decisions:
-  apply: "score >= 75"
-  maybe: "55-74"
-  reject: "score < 55"
+  apply: "score >= 70"
+  maybe: "45-69"
+  reject: "score < 45"
 
-# No condition-based hard-stops. An unmet must-have skill simply costs points
-# (it does NOT auto-reject) — a candidate strong elsewhere can still be a Maybe.
-conditions_policy: "Location, compensation, work format, language logistics, and industry are FLAGS ONLY. They never reduce the score and never force a reject. List them so the user can weigh them; the user decides."
+# What is NOT scored — never let any of these move the number or the decision:
+not_scored_flags:
+  - seniority_level   # grade mismatch is a FLAG, not a deduction
+  - domain_industry   # consumer vs B2B, sector fit, etc. is a FLAG
+  - location
+  - compensation
+  - work_format
+  - language
+  - industry_exclusion
 
-# The only thing worth a hard caution is a clearly fake/scam/lead-gen posting —
-# surface it as a prominent warning flag, but still leave the decision to the user.
-integrity_flag: "Flag obvious scam/fake/lead-gen postings prominently; do not silently auto-reject."
+rules:
+  - "Score only skills the resume actually contains vs skills the vacancy lists."
+  - "An unmet skill costs coverage points; it never auto-rejects."
+  - "Never lower the score because the role is below/above the candidate's grade, in a different domain, pays unknown/low, or is in another location. Flag it instead."
+  - "Flag obvious scam/fake/lead-gen postings prominently, but leave the decision to the user."

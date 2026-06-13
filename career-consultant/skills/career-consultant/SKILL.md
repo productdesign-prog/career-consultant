@@ -52,10 +52,10 @@ After intake, propose next steps and route:
 
 - Unsure which roles/directions to target → `career-strategist` (offer probability, comp, hiring speed, trajectory).
 - Wants to understand what the market expects → `market-analyst` (market scan + frequency table).
-- Has a specific vacancy → `job-match-scorer` (skills-only weighted score, confidence, evidence map; conditions are flags, not blockers).
+- Has a specific vacancy → `job-match-scorer` (skills-only score; grade, domain, location, pay, language are flags, never scored).
 - Wants the resume checked → `resume-ats-reviewer` (market-fit + ATS + evidence map).
 - Wants bullets/sections rewritten → `resume-rewriter` (three-layer model; Master stays read-only).
-- Has a vacancy in the Apply band (skills score ≥ 75) and wants to apply → `cover-letter-writer`.
+- Has a vacancy in the Apply band (skills score ≥ 70) and wants to apply → `cover-letter-writer`.
 - Got a rejection or feedback → `rejection-analyst` (reason extraction → profile/strategy update).
 - Wants to track everything → `career-tracker`.
 

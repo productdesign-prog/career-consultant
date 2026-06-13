@@ -1,6 +1,6 @@
 ---
 name: cover-letter-writer
-description: Write a short, specific cover letter for a vacancy using only verified facts from the user's resume/profile. Use when the user wants a cover letter, application letter, or "письмо рекрутёру/сопроводительное" for a specific role. Maximum 3 paragraphs and ~220 words, no generic enthusiasm or clichés, two or three evidence-based overlaps with the role, and one concrete reason for interest in the company. Only write once the vacancy is in the Apply band (skills score ≥ 75 via job-match-scorer) and the user confirms.
+description: Write a short, specific cover letter for a vacancy using only verified facts from the user's resume/profile. Use when the user wants a cover letter, application letter, or "письмо рекрутёру/сопроводительное" for a specific role. Maximum 3 paragraphs and ~220 words, no generic enthusiasm or clichés, two or three evidence-based overlaps with the role, and one concrete reason for interest in the company. Only write once the vacancy is in the Apply band (skills score ≥ 70 via job-match-scorer) and the user confirms.
 ---
 
 # Cover Letter Writer
@@ -9,7 +9,7 @@ Write a letter that sounds like a competent human wrote it in ten focused minute
 
 ## Preconditions
 
-Only draft a letter for a vacancy in the **Apply band (skills score ≥ 75)** from `job-match-scorer`, and after the user confirms. If it hasn't been scored, score it first or say why you're not writing yet. Use only facts present in the user's resume/profile — no invented motivation or claims.
+Only draft a letter for a vacancy in the **Apply band (skills score ≥ 70)** from `job-match-scorer`, and after the user confirms. If it hasn't been scored, score it first or say why you're not writing yet. Use only facts present in the user's resume/profile — no invented motivation or claims.
 
 ## Rules
 

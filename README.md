@@ -20,22 +20,21 @@ It works as a pipeline, not a text generator: **market → vacancy → profile �
 
 ## Install
 
-### Option A — Organization marketplace (recommended, one-click for colleagues)
+The address to share with anyone is just this one line:
 
-An **organization owner** does this once:
+```
+productdesign-prog/career-consultant
+```
 
-1. Open **Organization settings → Plugins**.
-2. Click **Add plugin** → choose **GitHub** as the source.
-3. Enter the repository: `productdesign-prog/career-consultant`
-4. Set the install preference for the `career-consultant` plugin:
-   - **Available** — colleagues install it themselves in one click from the plugin catalog
-   - **Installed by default** — added automatically for everyone (they can remove it)
-   - **Required** — installed for everyone, cannot be removed
-5. (Optional) Enable **Sync automatically** so updates pushed to this repo roll out on their own.
+### Fastest — anyone, no admin needed (Cowork desktop)
 
-Colleagues then open the plugin catalog in Cowork and click **Install** — no files to pass around.
+1. Open **Personal plugins** → click **+** → **Add marketplace**.
+2. Paste: `productdesign-prog/career-consultant`
+3. The `career-consultant` plugin appears in the catalog → click **Install**.
 
-### Option B — Claude Code / CLI
+That's it — no organization owner required.
+
+### Claude Code (terminal) — two commands
 
 ```
 /plugin marketplace add productdesign-prog/career-consultant
@@ -44,9 +43,16 @@ Colleagues then open the plugin catalog in Cowork and click **Install** — no f
 
 Update later with `/plugin marketplace update`.
 
-### Option C — Manual file
+### Org-wide (optional — organization owner, one-click for everyone)
 
-Build a `.plugin` file from the `career-consultant/` folder and upload it in Cowork (**Plugins → upload**). Useful when you're not an org owner.
+1. **Organization settings → Plugins → Add plugin → GitHub**.
+2. Repository: `productdesign-prog/career-consultant`.
+3. Set the install preference: **Available** (self-service), **Installed by default**, or **Required**.
+4. (Optional) Enable **Sync automatically** so pushes to this repo roll out on their own.
+
+### Manual file
+
+Build a `.plugin` from the `career-consultant/` folder and upload it in Cowork (**Plugins → upload**).
 
 ---
 

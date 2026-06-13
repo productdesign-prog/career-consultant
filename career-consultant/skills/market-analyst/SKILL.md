@@ -19,13 +19,28 @@ Different postings phrase the same requirement differently ("design system" / "U
 
 Separate **must-have** (appears often and stated as required) from **nice-to-have** from **noise** (one-off or boilerplate).
 
+## Requirement frequency (mandatory)
+
+Recommendations are only actionable when they're measurable, so always express how often each requirement appears as a percentage of the vacancies in your dataset:
+
+```
+Requirement frequency  (N = 34 vacancies)
+  Figma            97%
+  Design systems   83%
+  UX research      78%
+  Analytics        52%
+  AI tooling       41%
+```
+
+Compute each percentage as (vacancies mentioning it ÷ N). Show N next to the table so the reader can judge weight. "Figma in 97%" is a directive the user can act on; "Figma is important" is not.
+
 ## Report structure — Market Requirements Report
 
 Produce exactly these sections:
 
 1. Search scope — role, geography, level, format, industries, date of analysis.
 2. Dataset — vacancy count, period, sources.
-3. Top repeated requirements (with frequency).
+3. Requirement frequency table (% of dataset, with N) — must-have and nice-to-have ranked by frequency.
 4. Must-have requirements.
 5. Nice-to-have requirements.
 6. Tooling expectations.

@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Career consultant plugin marketplace",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "career-consultant",
       "source": "./career-consultant",
-      "description": "Personal career consultant: interviews the user, analyzes the job market, scores vacancies, reviews resumes for market-fit and ATS, rewrites bullets truthfully, drafts tight cover letters, and maintains a vacancy tracker.",
-      "version": "0.1.0"
+      "description": "Personal career consultant: strategy, market analysis with requirement frequencies, weighted vacancy scoring with confidence + evidence map, resume market-fit/ATS review, truthful three-layer resume rewriting, tight cover letters, application tracking, and rejection-driven learning.",
+      "version": "0.2.0"
     }
   ]
 }

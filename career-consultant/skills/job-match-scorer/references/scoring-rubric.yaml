@@ -1,0 +1,23 @@
+# Job match scoring rubric — total 100, Apply threshold >= 80.
+# These weights are fixed. The scorer must score every category, show the
+# sub-score out of its max, and sum to TOTAL. Never report a TOTAL that
+# doesn't equal the sum of the parts.
+
+weights:
+  role_fit: 20          # title, seniority, task type, scope, IC vs lead
+  must_have_skills: 25  # hard requirements; an unmet one forces reject (see hard_stop)
+  domain_fit: 10        # industry / domain relevance
+  evidence_strength: 15 # metrics, shipped outcomes, scale, decisions, research, portfolio
+  location_fit: 10      # geo, timezone, visa/relocation, format, language
+  compensation_fit: 5   # salary + personal constraints
+  keyword_coverage: 10  # overlap with the vacancy's language, without stuffing
+  strategic_value: 5    # worth the effort even with small gaps
+
+decisions:
+  apply: "score >= 80 AND no hard-stop"
+  maybe: "70-79, or compensable gaps"
+  reject: "score < 70, OR an unmet hard requirement"
+  do_not_apply: "conflicts with the user's constraints"
+
+# A failed must-have hard requirement = reject regardless of TOTAL.
+hard_stop: "If any hard-stop check fails, decision is reject/do-not-apply even if TOTAL >= 80."

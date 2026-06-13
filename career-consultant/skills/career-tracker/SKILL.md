@@ -27,6 +27,7 @@ New · Parsed · Rejected · Maybe · Ready to apply · Applied · Recruiter scr
 - When the user applies: record date, the resume and cover-letter versions sent.
 - Track outcomes (response, interview stage, feedback, rejection reason) so patterns become visible over time.
 - Keep the decision rationale in the row — future-you should understand past decisions without re-reading the posting.
+- When a row is marked rejected (or feedback arrives), offer to run `rejection-analyst` on it — and once several rejections accumulate, offer the cross-vacancy pattern analysis. The tracker is the memory that makes that learning loop possible.
 
 ## Weekly view (optional)
 

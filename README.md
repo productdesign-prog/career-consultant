@@ -9,12 +9,14 @@ It works as a pipeline, not a text generator: **market → vacancy → profile �
 | Skill | What it does |
 |---|---|
 | `career-consultant` | Intake interview, sets up working files, routes to the rest |
-| `market-analyst` | Scans recent real vacancies → Market Requirements Report |
-| `job-match-scorer` | Scores a vacancy 0–100, applies hard-stops, decides apply/maybe/reject |
-| `resume-ats-reviewer` | Reviews a resume in two lenses: market-fit and ATS parseability |
-| `resume-rewriter` | Rewrites bullets/sections to a target — without inventing experience |
+| `career-strategist` | Which roles to target — offer probability, comp, hiring speed, trajectory |
+| `market-analyst` | Scans recent real vacancies → Market Requirements Report with frequency % |
+| `job-match-scorer` | Weighted 0–100 score + confidence + requirement→evidence map, applies hard-stops |
+| `resume-ats-reviewer` | Reviews a resume in two lenses: market-fit (with evidence map) and ATS parseability |
+| `resume-rewriter` | Rewrites bullets to a target without inventing experience; Master → Target → Variant |
 | `cover-letter-writer` | Short, specific cover letters with a built-in anti-cliché list |
 | `career-tracker` | Maintains a vacancy tracker (local spreadsheet or a connected tool) |
+| `rejection-analyst` | Turns rejections + feedback into profile/strategy updates |
 
 ---
 

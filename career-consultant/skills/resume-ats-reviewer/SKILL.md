@@ -27,6 +27,13 @@ For PDF/DOCX/DOC, extract the text first: DOC/RTF via libreoffice (`libreoffice 
 ### Block 1 — Market-fit review
 1. Target role (+ seniority).
 2. Market requirements used (and their source — vacancy, market scan, or role knowledge; confidence depends on it).
+2b. **Requirement → evidence map** — the heart of a real review (without it, ATS work collapses into keyword matching). For each key requirement, name the actual supporting line and rate it:
+```
+Requirement: [exact requirement]
+  Evidence:  Resume → [Company/section] → [specific line]   (or: NONE)
+  Strength:  Strong | Medium | Weak | Missing
+```
+"Missing" is a valid, valuable answer — it shows exactly what to shore up. Never invent evidence.
 3. Current positioning (1–2 lines).
 4. Strong sections (keep/foreground).
 5. Weak sections (with reasons).
@@ -51,7 +58,7 @@ Parseability and keyword alignment, not folklore — there are no magic "ATS hac
 10. ATS-safe rewrite suggestions (flatten this table; move skills out of the sidebar; rename headings).
 
 ### Close with
-- Confidence level (high/medium/low + reason).
+- Confidence: NN% + reason (lower it when there's no specific vacancy to match against, the resume is partial, or the role expects samples/portfolio you can't see).
 - Top 3 actions (highest-payoff edits, restated to start immediately).
 
 ## Bullet rewriting rules

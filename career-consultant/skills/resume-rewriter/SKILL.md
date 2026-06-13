@@ -19,12 +19,30 @@ Did X for Y audience/context, using Z method/tool, resulting in a measurable or 
 - Bad: "Passionate UX designer with strong research skills."
 - Better: "Led evaluative research for [product/context], identifying [N] usability issues `[NEED DATA]` and translating findings into [design/product outcome]."
 
+## Three-layer model (anti-overfitting — read this first)
+
+Career agents that rewrite the whole resume for every posting quietly destroy the candidate's coherent story after 20–30 vacancies. Prevent that with three explicit layers:
+
+```
+Master Resume        ← the truthful, complete record. NEVER auto-edit it.
+   ↓ (tailor)
+Target Role Resume   ← one per target role; emphasis/ordering for that role family
+   ↓ (tailor)
+Vacancy Variant      ← per posting; small, surgical tweaks for one vacancy
+```
+
+Rules:
+- Treat the **Master Resume** as read-only. You may *suggest* additions to it (e.g. a `[NEED DATA]` the user later fills), but never silently rewrite it — changes to the Master require the user's explicit say-so.
+- A **Target Role Resume** is derived from the Master: reorder, foreground, trim — never add experience the Master doesn't contain.
+- A **Vacancy Variant** is the smallest possible diff from the Target Role Resume — only what this one posting needs. Save it as a separate file/version so the Master and Target stay clean.
+- Always name which layer you're editing in your output.
+
 ## How to work
 
-1. Anchor to a target: a specific vacancy if available, else the market requirements profile, else the target role.
+1. Anchor to a target: a specific vacancy if available, else the market requirements profile, else the target role. Decide which layer you're producing (Target Role Resume vs Vacancy Variant).
 2. Go bullet by bullet. For each: show the original, the rewrite, and a one-line reason tied to the target. Where a number would make the bullet land but isn't in the source, insert a `[NEED DATA]` slot rather than a guessed figure.
 3. Flag claims that read stronger than the evidence with `[VERIFY]` and suggest a truthful softer phrasing.
-4. Keep the **master resume** intact. Produce vacancy-specific variants as separate outputs so the user doesn't overfit the master to one posting.
+4. Never write changes back into the Master. Produce variants as separate outputs.
 
 ## Output — Resume Patch Suggestions
 

@@ -1,7 +1,7 @@
 {
   "name": "career-consultant",
-  "version": "0.1.0",
-  "description": "Personal career consultant: interviews the user, analyzes the job market, scores vacancies against their profile, reviews resumes for market-fit and ATS, rewrites bullets truthfully, drafts tight cover letters, and maintains a vacancy tracker.",
+  "version": "0.2.0",
+  "description": "Personal career consultant: sets job-search strategy, analyzes the market with requirement frequencies, scores vacancies with a weighted breakdown + confidence + evidence map, reviews resumes for market-fit and ATS, rewrites bullets truthfully (three-layer, Master read-only), drafts tight cover letters, tracks applications, and learns from rejections.",
   "author": {
     "name": "UMAG"
   },

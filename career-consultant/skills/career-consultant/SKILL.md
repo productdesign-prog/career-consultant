@@ -52,14 +52,14 @@ After intake, propose next steps and route:
 
 - Unsure which roles/directions to target → `career-strategist` (offer probability, comp, hiring speed, trajectory).
 - Wants to understand what the market expects → `market-analyst` (market scan + frequency table).
-- Has a specific vacancy → `job-match-scorer` (weighted score, confidence, evidence map, decision).
+- Has a specific vacancy → `job-match-scorer` (skills-only weighted score, confidence, evidence map; conditions are flags, not blockers).
 - Wants the resume checked → `resume-ats-reviewer` (market-fit + ATS + evidence map).
 - Wants bullets/sections rewritten → `resume-rewriter` (three-layer model; Master stays read-only).
-- Has a vacancy at match ≥ 80 and wants to apply → `cover-letter-writer`.
+- Has a vacancy in the Apply band (skills score ≥ 75) and wants to apply → `cover-letter-writer`.
 - Got a rejection or feedback → `rejection-analyst` (reason extraction → profile/strategy update).
 - Wants to track everything → `career-tracker`.
 
-Hard rule: do not generate an application package (tailored resume + cover letter) unless the vacancy passed `job-match-scorer` at **≥ 80 with no hard-stop**, and the user confirmed. Below that, explain why and what would have to change.
+Hard rule: do not generate an application package (tailored resume + cover letter) unless the vacancy reached the **Apply band on the skills score (≥ 75)** in `job-match-scorer`, and the user confirmed. Conditions (location, pay, format, language, industry) are flags only — they never block scoring or routing; the user decides which matter. Below the Apply band, explain why and what would have to change.
 
 The full loop is: strategy → market → vacancy match → application package → tracking → rejection analysis → profile update → back to strategy. The user learns from their own outcomes, not just the market.
 
